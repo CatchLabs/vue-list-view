@@ -1,0 +1,18 @@
+{
+  "name": "vue-list-view",
+  "version": "0.3.0",
+  "description": "ListView for Vue.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CatchLabs/vue-list-view.git"
+  },
+  "author": "Catch Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CatchLabs/vue-list-view/issues"
+  }
+}
