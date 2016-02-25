@@ -26,7 +26,7 @@ the list. So you should just leave the `props` option empty.
         components: {foo}
     }
     ```
-itemComponent serves as an adaptor for list data, for example, normally you would do
+`itemComponent` serves as an **adaptor** for list data, for example, normally you would do
     ```html
     <foo v-for="item in listToRender" :some-prop="item">
     ```
@@ -37,7 +37,7 @@ With list-view, it is now
       ...internal v-for for demonstration, you needn't write the following...
       <template v-for="item in items">
         <item-component :item="item">
-          ...The is is template of itemComponent...
+          ...The is the template of itemComponent...
           <foo :some-prop="item"></foo>
           ...template end...
         </item-component>
@@ -51,7 +51,7 @@ And The data is passed through `list -> listView -> item -> foo`
     ```javascript
     const listView = ListView(itemComponent)
     ```
-You can also give it some other name like `albumListView`.  
+You can of course give it some other name like `albumListView`.  
 
 3. Add `listView` to some other component's `components` and use it in `template`
     ```javascript
@@ -81,7 +81,7 @@ or simply use it like
 - `items`  
 The list to be rendered (`v-for`-ed)
 - `preloadScreens`  
-The preload margin measured in screen's height  
+The preload margin measured in screen's height, set to 0 if you don't want preloading (not suggested) 
 
 ### Events
 - `list-view:scrolled-to-end`  
