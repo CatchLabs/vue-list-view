@@ -16,13 +16,15 @@
 - babel-loader 6.0+
 
 ## Usage
-1. Define an `itemComponent`
+1. Define an `itemComponent`  
 It's just a plain vue component object, except for it's `props` will
 be force overridden to only accept an `item`, which is an item in
 the list. So you should just leave the `props` option empty.
-2. Instantiate a listView component object
-`const listView = ListView(itemComponent)`
-You can also give it some other name like `albumListView`.
+
+2. Instantiate a listView component object  
+`const listView = ListView(itemComponent)`  
+You can also give it some other name like `albumListView`.  
+
 3. Add listView to components and use it in template
 
 ## ListView Component
