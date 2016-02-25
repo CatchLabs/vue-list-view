@@ -4,7 +4,7 @@
   "description": "ListView for Vue.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel lib/list-view.js --out-file index.js && uglifyjs index.js -c -o index.js"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,15 @@
   },
   "dependencies": {
     "lodash": "^4.5.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-preset-es2015": "^6.5.0",
+    "uglify-js": "^2.6.2"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
   }
 }

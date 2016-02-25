@@ -12,8 +12,6 @@
 
 ## Requirements
 - vue 1.0+
-- webpack 1.0+
-- babel-loader 6.0+
 
 ## Usage
 1. Define an `itemComponent`  
