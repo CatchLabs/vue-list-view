@@ -26,12 +26,15 @@ You can also give it some other name like `albumListView`.
 3. Add listView to components and use it in template
 
 ## ListView Component
+
 ### Props
 - items: the list to be rendered (`v-for`-ed)
 - preloadScreens - The preload margin measured in screen's height
+
 ### Events
 - `list-view:scrolled-to-end`
   Dispatched when scrolled to end, can be used as a signal to load more data
+
 ### Slots
 - `list-start`, `list-end`
   Placed before/after the list, can be used to display a loading status
