@@ -80,8 +80,13 @@ or simply use it like
 ### Props
 - `items`  
 The list to be rendered (`v-for`-ed)
-- `preloadScreens`  
+- `preloadScreens` (default: 3)  
 The preload margin measured in screen's height, set to 0 if you don't want preloading (not suggested) 
+- `scrollInside` (default: false)
+True: Set overflow-y:auto to scroll inside the container (.list-view)
+False: Let the container expand to scroll inside `body`,
+Note that when set to `true`, you need to manually add css to constrain the height of `.list-view`.
+Warning: Setting true will cause a significant performance penalty on mobile devices.
 
 ### Events
 - `list-view:scrolled-to-end`  
