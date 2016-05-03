@@ -9,7 +9,7 @@
 - Does not modify the original data (the list or the items)
 
 ## Demo 
-Static [Demo](http://catchlabs.github.io/vue-list-view/#!/)
+[Static Demo](http://catchlabs.github.io/vue-list-view/#!/)    
 See it in production: [Catch WebApp](http://app.catch.cc/?skipintro)
 
 ## Requirements
