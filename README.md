@@ -95,3 +95,7 @@ Dispatched when scrolled to end, can be used as a signal to load more data
 ### Slots
 - `list-start`, `list-end`  
 Placed before/after the list, can be used to display a loading status
+
+## Caveats
+### Do not apply css margin directly to your components
+Apply only to .list-view-item, because margin collapses and causes trouble for scroll heights

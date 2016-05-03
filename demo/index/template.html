@@ -1,0 +1,20 @@
+<div class="title">
+    VueListView Demo
+    <div class="links">
+        <a :class="{active: mode === 'normal'}" v-link.literal="/normal">Normal Mode</a>
+        <a :class="{active: mode === 'scroll-inside'}" v-link.literal="/scroll-inside">Scroll-inside Mode</a>
+    </div>
+</div>
+<div class="view">
+    <list-view v-if="mode === 'normal'" :items="someListToRender" :preload-screens="3">
+        <div slot="list-end" class="spinner-container">
+            <spinner slot="list-end"></spinner>
+        </div>
+    </list-view>
+    <list-view v-if="mode === 'scroll-inside'" :scroll-inside="true" :items="someListToRender" :preload-screens="3">
+        <div slot="list-end" class="spinner-container">
+            <spinner slot="list-end"></spinner>
+        </div>
+    </list-view>
+</div>
+<div class="add-data" @click="addData">Add</div>

@@ -1,0 +1,46 @@
+.add-data {
+  height: 64px;
+  width: 64px;
+  line-height: 64px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  border-radius: 50%;
+  background: #ff4081;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+  user-select: none;
+}
+
+.list-view {
+  text-align: center;
+  .list-view-item {
+    margin-bottom: 20px;
+  }
+}
+
+.title {
+  position: fixed;
+  padding: 0 64px;
+  box-sizing: border-box;
+  height: 64px;
+  line-height: 64px;
+  background: #00bcd4;
+  width: 100%;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  .links {
+    float: right;
+    a {
+      color: inherit;
+      margin-left: 20px;
+      &.active {
+        font-weight: bold;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,57 @@
+.spinner-container {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+
+spinner {
+  position: absolute;
+  text-align: center;
+  opacity: 1;
+  pointer-events: none;
+  left: 50%;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  transform: translate3d(-50%, -50%, 0);
+  transition: opacity 0.3s ease;
+  z-index: 999;
+  svg {
+    animation: rotator 1.4s linear infinite;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 32px;
+    .path {
+      stroke-dasharray: 187;
+      stroke-dashoffset: 0;
+      transform-origin: center;
+      stroke: #000;
+      animation: dash 1.4s ease-in-out infinite;
+    }
+  }
+}
+
+@keyframes rotator {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    transform: rotate(450deg);
+  }
+}
