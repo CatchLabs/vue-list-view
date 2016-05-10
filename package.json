@@ -1,6 +1,6 @@
 {
   "name": "vue-list-view",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "ListView for Vue.",
   "main": "index.js",
   "scripts": {

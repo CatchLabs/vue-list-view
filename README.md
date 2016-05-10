@@ -81,16 +81,19 @@ or simply use it like
 ### Props
 - `items`  
 The list to be rendered (`v-for`-ed)
-- `preloadScreens` (default: 3)  
+- `preloadScreens` (default: 6)  
 The preload margin measured in screen's height, set to 0 if you don't want preloading (not suggested) 
 - `scrollInside` (default: false)
 True: Set overflow-y:auto to scroll inside the container (.list-view)
 False: Let the container expand to scroll inside `body`,
 Note that when set to `true`, you need to manually add css to constrain the height of `.list-view`.
 Warning: Setting true will cause a significant performance penalty on mobile devices.
+- `loadMore`
+The method for loading more data.
+Since event propagation is deprecated in 2.0, we have to manually pass a `loadMore` to call for more data.  
 
 ### Events
-- `list-view:scrolled-to-end`  
+- `list-view:scrolled-to-end` (not available in vue 2.0)  
 Dispatched when scrolled to end, can be used as a signal to load more data
 
 ### Slots
